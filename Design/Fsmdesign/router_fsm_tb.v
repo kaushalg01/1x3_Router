@@ -1,0 +1,124 @@
+module router_fsm_tb;
+reg clock,resetn,pkt_valid,parity_done,soft_reset_0,soft_reset_1,soft_reset_2,fifo_full,low_pkt_valid,fifo_empty_0,
+	          fifo_empty_1,fifo_empty_2;
+reg [1:0]data_in;
+wire  busy,detect_add,ld_state,laf_state,full_state,write_enb_reg,rst_int_reg,lfd_state;
+
+router_fsm dut(clock,resetn,pkt_valid,parity_done,soft_reset_0,soft_reset_1,soft_reset_2,fifo_full,low_pkt_valid,fifo_empty_0,fifo_empty_1,fifo_empty_2,
+	       data_in,busy,lfd_state,detect_add,ld_state,laf_state,full_state,write_enb_reg, rst_int_reg);
+always 
+ #5 clock=~clock;
+
+task resetstate;
+	begin
+		resetn=1'b0;
+		@(negedge clock);
+		resetn=1'b1;
+	end
+endtask
+
+task flow1;
+	begin
+		pkt_valid=1'b1;
+		data_in = 2'b01;
+		fifo_empty_1=1'b1;
+		repeat(3) @(negedge clock);
+		fifo_empty_1=1'b0;
+		repeat(12) @(negedge clock);
+		fifo_full=1'b1;
+		@(negedge clock);
+		@(negedge clock);
+		fifo_full=1'b0;
+		@(negedge clock);
+		parity_done=1'b0;
+		low_pkt_valid=1'b1;
+		pkt_valid=1'b0;
+	end
+endtask
+
+task flow2;
+ 	begin
+		pkt_valid=1'b1;
+		data_in=2'b0;
+		fifo_empty_0=1;
+		@(negedge clock);
+		@(negedge clock);
+		fifo_empty_0=0;
+		fifo_full=1'b1;
+		repeat(2) @(negedge clock);
+		fifo_full=1'b0;
+		@(negedge clock);
+		parity_done=1'b0;
+		low_pkt_valid=1'b0;
+		pkt_valid=1'b1;
+		@(negedge clock);
+		pkt_valid=1'b0;
+		fifo_full=1'b0;
+	end
+endtask
+
+task flow3;
+	begin
+		pkt_valid=1'b1;
+		data_in=2'b01;
+		fifo_empty_1=0;
+		@(negedge clock);
+		@(negedge clock);
+		fifo_empty_1=1;
+		@(negedge clock);
+		@(negedge clock);
+		fifo_empty_1=0; 
+		fifo_full=1'b1;
+		repeat(2) @(negedge clock);
+		fifo_full=1'b0;
+		@(negedge clock);
+		parity_done=1'b0;
+		low_pkt_valid=1'b0;
+		pkt_valid=1'b1;
+		@(negedge clock);
+		pkt_valid=1'b0;
+		fifo_full=1'b0;
+	end
+endtask
+
+task flow4;
+	begin
+		pkt_valid=1;
+		data_in=2'd0;
+		fifo_empty_0=1'b1;
+		@(negedge clock);
+		@(negedge clock);
+		fifo_empty_0=1'b0;
+		fifo_full=1'b1;
+		repeat(10) @(negedge clock);
+		fifo_full=1'b0;
+		@(negedge clock);
+		parity_done=1'b1;
+	end
+endtask
+task flow5;
+	begin
+		pkt_valid=1;
+		data_in=2'd0;
+		fifo_empty_0=1'b1;
+		@(negedge clock);
+		@(negedge clock);
+		fifo_empty_0=1'b0;
+		fifo_full=1'b1;	
+		@(negedge clock);
+		soft_reset_0=1'b1;
+	end
+endtask
+		
+initial begin
+	clock=1'b0;
+	resetstate;
+	//flow1;
+	//flow2;
+	//flow3;
+	//flow4;
+	flow5;
+
+	#50 $finish;
+	end
+endmodule	

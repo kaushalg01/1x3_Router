@@ -1,0 +1,15 @@
+D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_sync
+
+Top level modules:
+	router_sync
+
+} {} {}} D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_sync_tb
+
+Top level modules:
+	router_sync_tb
+
+} {} {}}

@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at router_reg.v(48): always construct contains both blocking and non-blocking assignments File: D:/MavenVerilog/Router3x1/Design/RegisterDesign/router_reg.v Line: 48
+Warning (10273): Verilog HDL warning at router_fifo.v(9): extended using "x" or "z" File: D:/MavenVerilog/Router3x1/Design/FIFOdesign/router_fifo.v Line: 9
+Warning (10273): Verilog HDL warning at router_fifo.v(59): extended using "x" or "z" File: D:/MavenVerilog/Router3x1/Design/FIFOdesign/router_fifo.v Line: 59
+Warning (10268): Verilog HDL information at router_fifo.v(7): always construct contains both blocking and non-blocking assignments File: D:/MavenVerilog/Router3x1/Design/FIFOdesign/router_fifo.v Line: 7

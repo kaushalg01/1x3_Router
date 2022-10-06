@@ -1,0 +1,8 @@
+D:/MavenVerilog/Router3x1/FIFOdesign/router_fifo.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/FIFOdesign/router_fifo.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_fifo
+
+Top level modules:
+	router_fifo
+
+} {} {}}

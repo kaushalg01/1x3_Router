@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Aug 30 21:56:25 2022
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : router_fsm
+Top-level Entity Name : router_fsm
+Family : MAX V
+Device : 5M40ZE64C4
+Timing Models : Final
+Total logic elements : 28 / 40 ( 70 % )
+Total pins : 22 / 54 ( 41 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

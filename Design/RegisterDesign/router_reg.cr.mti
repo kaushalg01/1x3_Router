@@ -1,0 +1,15 @@
+D:/MavenVerilog/Router3x1/Design/RegisterDesign/router_reg.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/RegisterDesign/router_reg.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_reg
+
+Top level modules:
+	router_reg
+
+} {} {}} D:/MavenVerilog/Router3x1/Design/RegisterDesign/router_reg_tb.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/RegisterDesign/router_reg_tb.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_reg_tb
+
+Top level modules:
+	router_reg_tb
+
+} {} {}}

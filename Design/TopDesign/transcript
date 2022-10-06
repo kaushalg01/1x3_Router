@@ -1,0 +1,59 @@
+# Reading C:/modeltech64_10.6d/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# OpenFile D:/MavenVerilog/Router3x1/Design/TopDesign/router_top_tb.v
+vsim -gui work.router_top_tb -novopt
+# vsim -gui work.router_top_tb -novopt 
+# Start time: 21:32:45 on Sep 15,2022
+# ** Warning: (vsim-8891) All optimizations are turned off b# End time: 21:37:01 on Sep 15,2022, Elapsed time: 0:05:26
+# Errors: 0, Warnings: 0
+owly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing D:/MavenVerilog/Router3x1/Design/TopDesign/work.router_top_tb
+# Loading work.router_top_tb
+# Refreshing D:/MavenVerilog/Router3x1/Design/TopDesign/work.router_top
+# Loading work.router_top
+# Refreshing D:/MavenVerilog/Router3x1/Design/TopDesign/work.router_sync
+# Loading work.router_sync
+# Refreshing D:/MavenVerilog/Router3x1/Design/TopDesign/work.router_fsm
+# Loading work.router_fsm
+# Refreshing D:/MavenVerilog/Router3x1/Design/TopDesign/work.router_reg
+# Loading work.router_reg
+# Refreshing D:/MavenVerilog/Router3x1/Design/TopDesign/work.router_fifo
+# Loading work.router_fifo
+add wave  \
+sim:/router_top_tb/busy \
+sim:/router_top_tb/clock \
+sim:/router_top_tb/data_in \
+sim:/router_top_tb/data_out_0 \
+sim:/router_top_tb/data_out_1 \
+sim:/router_top_tb/data_out_2 \
+sim:/router_top_tb/error \
+sim:/router_top_tb/i \
+sim:/router_top_tb/pkt_valid \
+sim:/router_top_tb/read_enb_0 \
+sim:/router_top_tb/read_enb_1 \
+sim:/router_top_tb/read_enb_2 \
+sim:/router_top_tb/resetn \
+sim:/router_top_tb/valid_out_0 \
+sim:/router_top_tb/valid_out_1 \
+sim:/router_top_tb/valid_out_2
+run -all
+# ** Note: $finish    : D:/MavenVerilog/Router3x1/Design/TopDesign/router_top_tb.v(62)
+#    Time: 1350 ns  Iteration: 1  Instance: /router_top_tb
+# 1
+# Break in Module router_top_tb at D:/MavenVerilog/Router3x1/Design/TopDesign/router_top_tb.v line 62
+add wave -position insertpoint negedge
+# (vish-4014) No objects found matching 'negedge'.
+# End time: 21:36:56 on Sep 15,2022, Elapsed time: 0:04:11
+# Errors: 1, Warnings: 1

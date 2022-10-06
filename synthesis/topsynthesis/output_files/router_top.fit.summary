@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sat Sep 10 09:24:21 2022
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : router_top
+Top-level Entity Name : router_top
+Family : MAX V
+Device : 5M80ZT100C4
+Timing Models : Final
+Total logic elements : 24 / 80 ( 30 % )
+Total pins : 43 / 79 ( 54 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

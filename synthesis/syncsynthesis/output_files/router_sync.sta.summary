@@ -1,0 +1,29 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clock'
+Slack : -6.169
+TNS   : -92.014
+
+Type  : Setup 'write_enb_reg'
+Slack : -4.488
+TNS   : -12.228
+
+Type  : Hold 'write_enb_reg'
+Slack : 1.252
+TNS   : 0.000
+
+Type  : Hold 'clock'
+Slack : 2.036
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'write_enb_reg'
+Slack : -2.289
+TNS   : -2.289
+
+------------------------------------------------------------

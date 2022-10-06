@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at router_reg.v(45): always construct contains both blocking and non-blocking assignments File: D:/MavenVerilog/Router3x1/Design/RegisterDesign/router_reg.v Line: 45

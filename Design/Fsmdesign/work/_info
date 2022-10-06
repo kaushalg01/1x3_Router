@@ -1,0 +1,69 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modeltech64_10.6d/examples
+T_opt
+!s110 1663255972
+VS6H4`WC^Lg62gQQXG=Ubm2
+04 13 4 work router_fsm_tb fast 0
+=1-b068e64d8055-632345a3-2c6-67c
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1663256352
+V5KNT2>]iJMZA<=Pf1JmWX1
+04 10 4 work router_fsm fast 0
+=1-b068e64d8055-63234720-17d-4fa4
+R1
+R2
+n@_opt1
+R3
+vrouter_fsm
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 GdVRdg6639MIEmm6mf2082
+I`][0R4`ZW:JNk=UegEO=>3
+Z5 dD:/MavenVerilog/Router3x1/Design/Fsmdesign
+w1662711241
+8D:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm.v
+FD:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm.v
+L0 1
+Z6 OL;L;10.6d;65
+Z7 !s108 1662786412.000000
+!s107 D:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vrouter_fsm_tb
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 RCIj^^7OJ_c:9Q5f0PR]Z1
+I9Xcho2[a?Q@dMX44hXFd50
+R5
+w1662267794
+8D:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm_tb.v
+FD:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm_tb.v
+L0 1
+R6
+R7
+!s107 D:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm_tb.v|
+!i113 0
+R8
+R2

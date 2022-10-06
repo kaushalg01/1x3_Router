@@ -1,0 +1,44 @@
+# Reading C:/modeltech64_10.6d/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# OpenFile D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v
+vsim -gui work.router_sync_tb
+# vsim -gui work.router_sync_tb 
+# Start time: 21:40:42 on Sep 15,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v(6): (vopt-2241) Connection width does not match width of port 'fifo_full'. The port definition is at: D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v(2).
+# ** Warning: D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v(6): (vopt-2241) Connection width does not match width of port 'write_enb'. The port definition is at: D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v(3).
+# Loading work.router_sync_tb(fast)
+vsim -gui work.router_sync_tb -novopt
+# End time: 21:41:27 on Sep 15,2022, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 2
+# vsim -gui work.router_sync_tb -novopt 
+# Start time: 21:41:27 on Sep 15,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/work.router_sync_tb
+# Loading work.router_sync_tb
+# Refreshing D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/work.router_sync
+# Loading work.router_sync
+# ** Warning: (vsim-3015) D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v(6): [PCDPC] - Port size (1) does not match connection size (3) for port 'fifo_full'. The port definition is at: D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /router_sync_tb/dut File: D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v
+# ** Warning: (vsim-3015) D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v(6): [PCDPC] - Port size (3) does not match connection size (1) for port 'write_enb'. The port definition is at: D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /router_sync_tb/dut File: D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v
+add wave -position insertpoint sim:/router_sync_tb/*
+run -all
+# ** Note: $finish    : D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v(53)
+#    Time: 980 ns  Iteration: 0  Instance: /router_sync_tb
+# 1
+# Break in Module router_sync_tb at D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync_tb.v line 53
+# End time: 21:44:37 on Sep 15,2022, Elapsed time: 0:03:10
+# Errors: 0, Warnings: 3

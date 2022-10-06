@@ -1,0 +1,37 @@
+D:/MavenVerilog/Router3x1/Design/TopDesign/router_top_tb.v {2 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/TopDesign/router_top_tb.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_top_tb
+** Warning: D:/MavenVerilog/Router3x1/Design/TopDesign/router_top_tb.v(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	router_top_tb
+
+} {} {}} D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/Synchroniserdesign/router_sync.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_sync
+
+Top level modules:
+	router_sync
+
+} {} {}} D:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/Fsmdesign/router_fsm.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_fsm
+
+Top level modules:
+	router_fsm
+
+} {} {}} D:/MavenVerilog/Router3x1/Design/FIFOdesign/router_fifo.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/FIFOdesign/router_fifo.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_fifo
+
+Top level modules:
+	router_fifo
+
+} {} {}} D:/MavenVerilog/Router3x1/Design/TopDesign/router_top.v {1 {vlog -work work -vopt -stats=none D:/MavenVerilog/Router3x1/Design/TopDesign/router_top.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module router_top
+
+Top level modules:
+	router_top
+
+} {} {}}

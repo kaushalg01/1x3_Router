@@ -1,0 +1,62 @@
+module router_fifo(input clock,resetn,write_enb,soft_reset,read_enb,lfd_state,input [7:0]data_in,output reg empty,full,output reg [7:0] data_out);
+reg [8:0] fifo[15:0];
+reg [3:0] writeptr,readptr;
+reg [5:0] counter;
+reg [4:0] count;
+
+ always@(posedge clock) begin
+   if(soft_reset) begin
+    data_out<=8'bz;
+     empty<=1'b1;
+	  full<=1'b0;
+	  writeptr<=4'b0;
+	  readptr<=4'b0;
+	  count<=4'b0;  
+	  fifo[0]<=9'b0;
+    end 
+    else if(resetn == 1'b0)	
+	begin
+	  empty<=1'b1;
+	  full<=1'b0;
+	  writeptr<=4'b0;
+	  readptr<=4'b0;
+	  count<=4'b0;   //stores the number of data elements currently stored in fifo
+	  data_out<=8'b0;
+	  fifo[0]<=9'b0;
+	end
+	
+     else begin
+	  if(write_enb && (full == 1'b0))  begin   //writing into fifo
+	     fifo[writeptr][7:0]<=data_in;
+	     count=count+1'b1;
+             empty<=1'b0;
+	     if(lfd_state == 1'b1)
+	        fifo[writeptr][8]<=1'b1;
+	     else
+	        fifo[writeptr][8]<=1'b0;
+	     if(count == 5'd16) begin
+	        full <=1'b1;
+		empty<=1'b0; 
+  	      end
+	     writeptr<=(writeptr+1'b1)%16;
+	  end
+	   
+	   if(read_enb && (empty == 0)) begin   //reading from fifo
+	      if(fifo[readptr][8]==1'b1) 
+		 counter <= fifo[readptr][7:2]+1'b1;
+	      else
+  		 counter <= counter-1'b1;
+	      data_out <= fifo[readptr][7:0];
+	      readptr<=(readptr+1'b1)%16;
+	      count=count-1'b1;
+              full<=1'b0;
+              if(count == 1'b0) begin
+  		empty<=1'b1;
+ 		full <=1'b0;
+   	      end
+   	   end
+           if(empty && (counter == 0))  //after reading everything from fifo , setting data_out high impedance
+	         data_out <=8'bz;
+          end
+     end
+endmodule
