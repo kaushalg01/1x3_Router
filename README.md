@@ -57,7 +57,7 @@ The Design folder contains the design RTL code and testbench code.
 Synthesis folder contains RTL synthesised design ,which has been synthesised using Quartus prime , .qpf files can be viewed usin Quartus Prime to view the generated netlist.
 Output waveform has been attached as below:
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/75021962/194216375-f9ab414a-5b60-4c1c-b530-aad7870bbaba.png">
+<img width="500" height = "500" alt="image" src="https://user-images.githubusercontent.com/75021962/194216375-f9ab414a-5b60-4c1c-b530-aad7870bbaba.png">
 
 
 
