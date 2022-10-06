@@ -53,7 +53,14 @@ The top module is as shown:
 4. FSM Controller block:
 <img width="383" alt="image" src="https://user-images.githubusercontent.com/75021962/194210144-d827c83a-b798-4a54-ab8f-8e1bc94df93e.png">
 
-The verilog souce code has been uploaded in the sources.
+The Design folder contains the design RTL code and testbench code. 
+Synthesis folder contains RTL synthesised design ,which has been synthesised using Quartus prime , .qpf files can be viewed usin Quartus Prime to view the generated netlist.
+Output waveform has been attached as below:
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/75021962/194216375-f9ab414a-5b60-4c1c-b530-aad7870bbaba.png">
+
+
+
 
 
 
